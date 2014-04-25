@@ -11,15 +11,17 @@
 </head>
 <body>
 	<nav id="container">
-		<div id="logo">
-			<a href=""><img src="images/logo.png"></a>
+		<div class="navContainer">
+			<div id="logo">
+				<a href=""><img src="images/logo.png"></a>
+			</div>
+			<ul id="topnav">
+				<li><a href=".section1">How it works</a></li>
+				<li><a href=".section2">Syntax</a></li>
+				<li><a href=".section3">Spelling</a></li>
+				<li><a href=".section4">Preview</a></li>
+			</ul>
 		</div>
-		<ul id="topnav">
-			<li><a href=".section1">How it works</a></li>
-			<li><a href=".section2">Syntax</a></li>
-			<li><a href=".section3">Spelling</a></li>
-			<li><a href=".section4">Preview</a></li>
-		</ul>
 	</nav>
 	<header>
 		<div id="container">
@@ -29,29 +31,28 @@
 				<img id="download" src="images/download.png">
 					
 			</div>
-			
+			<div id="formpopup">
+				<h2>Login to start download</h2>
+				<form action="" method="post" id="customtheme">
+					<p>
+						<label for="username">Username</label>
+						<input type="text" name="username" id="username" />
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input type="text" name="password" id="password" />
+					</p>
+				</form>
+			</div>
 			<div id="cycler" class="animateRight">
 				<img class="active" src="images/animate_1.png">
 				<img src="images/animate_2.png">
 				<img src="images/animate_3.png">
 			</div>
-			
 		</div>
-		<div id="formContainer">
-		<h2>Login to start download</h2>
-		<form action="" method="post" id="customtheme">
-			<p>
-				<label for="username">Username</label>
-				<input type="text" name="username" id="username" />
-			</p>
-			
-			<p>
-				<label for="password">Password</label>
-				<input type="text" name="password" id="password" />
-			</p>
-		</form>
-	</div>
+		
 	</header>
+
 	<section id="container" class="section1">
 		<div id="headLeft">
 			<h1>How sintac works...</h1>

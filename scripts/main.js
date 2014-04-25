@@ -8,20 +8,37 @@ function cycleImages(){
       });
     }
 
-$(document).ready(function(){
 
-setInterval('cycleImages()', 4000);
-})
 
 
 $(document).ready(function(){
+
+    setInterval('cycleImages()', 4000);
+
     $("#topnav a").click(function(){
     var navId = $(this).attr("href");
     $("body,html").animate({scrollTop: $(navId).offset().top}, "slow");
     return false;
    });
 
+    $('#download').click(function() {
+      $('#formpopup').fadeToggle(1000);
+  });
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
