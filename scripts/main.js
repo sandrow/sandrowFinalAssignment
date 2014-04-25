@@ -9,8 +9,6 @@ function cycleImages(){
     }
 
 
-
-
 $(document).ready(function(){
 
     setInterval('cycleImages()', 4000);
